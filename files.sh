@@ -9,3 +9,6 @@ for file in *.png; do convert $file -resize 270 $file; done
 
 # make foto`s background white from transperancy
 for file in *.png; do convert -flatten $file $file; done
+
+# convert all png files into jpg
+mogrify -format jpg *.png
